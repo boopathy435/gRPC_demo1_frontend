@@ -1,0 +1,10 @@
+<div>
+    <h2>Monitoring Data</h2>
+    <ul>
+      <li *ngFor="let data of monitoringData">
+        CPU: {{ data.getCpuusage() }}%, Memory: {{ data.getMemoryusage() }}%, 
+        Network In: {{ data.getNetworkin() }} KB/s, Network Out: {{ data.getNetworkout() }} KB/s
+      </li>
+    </ul>
+  </div>
+  
